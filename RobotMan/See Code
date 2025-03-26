@@ -1,0 +1,193 @@
+
+
+_________________**HTML**_________________
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>robot</title>
+    <link rel="stylesheet" href="robot.css">
+    
+</head>
+<body>
+ 
+    <!-- div.cells.cell-$*9{nr $} -->
+
+    <h1>Robot</h1>
+<div id="container">
+
+    <div class="cells cell-1">nr 1</div> 
+    <div class="cells cell-2">nr 2</div>
+    <div class="cells cell-3">nr 3</div>
+    <div class="cells cell-4">nr 4</div>
+    <div class="cells cell-5"><img src="smile.jpg" alt="Smil for dælan"></div>
+    <div class="cells cell-6">nr 6</div>
+    <div class="cells cell-7">nr 7</div>
+    <div class="cells cell-8">nr 8</div>
+    <div class="cells cell-9">nr 9</div>
+    <div class="cells cell-10">nr 10</div>
+    <div class="cells cell-11">nr 11</div>
+    <div class="cells cell-12">nr 12</div>
+    <div class="cells cell-13">nr 13</div>
+    <div class="cells cell-14">nr 14</div>
+    <div class="cells cell-15">nr 15</div>
+    <div class="cells cell-16">nr 16</div>
+    <div class="cells cell-17">nr 17</div>
+    <div class="cells cell-18">nr 18</div>
+</div> 
+</body>
+</html>
+
+_________________**CSS**_________________
+
+
+html {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 1000px;
+    height: 1000px;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    margin: 100px auto;
+    gap: 1rem;
+    /* 1 rem er som standard 16px */
+    align-items: stretch;
+    /* CENTER fills the same as it contains horizontally */
+    justify-items: stretch;
+    /* CENTER /* CENTER fills the same as it contains vertically  */
+}
+
+/* START and END is OP and DOWN or left and right based on align or justify */
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /*pictures are automatically inline, therefore we make it to a block*/
+}
+
+
+.cell-1 {
+    background-color: aqua;
+    align-self: end;
+    justify-self: end;
+}
+
+.cell-2 {
+    background-color: rgb(0, 255, 0);
+    align-self: end;
+    justify-self: stretch;
+}
+
+.cell-3 {
+    background-color: blue;
+    align-self: end;
+    justify-self: start;
+}
+
+.cell-4 {
+    background-color: green;
+    justify-self: end;
+    align-self: stretch;
+
+}
+
+.cell-5 {
+    background-color: pink;
+    align-self: center;
+    justify-self: center;
+
+
+}
+
+.cell-6 {
+    background-color: yellow;
+    align-self: stretch;
+    justify-self: start;
+
+}
+
+.cell-7 {
+    background-color: red;
+    align-self: end;
+    justify-self: end;
+
+}
+
+.cell-8 {
+    background-color: lightcoral;
+
+}
+
+.cell-9 {
+    background-color: fuchsia;
+    align-self: end;
+    justify-self: start;
+}
+
+.cell-10 {
+    background-color: lightblue;
+    align-self: stretch;
+    justify-self: end;
+}
+
+.cell-11 {
+    background-color: lavender;
+}
+
+.cell-12 {
+    background-color: lemonchiffon;
+    align-self: stretch;
+    justify-self: start;
+}
+
+.cell-13 {
+    background-color: goldenrod;
+    align-self: start;
+    justify-self: end;
+}
+
+.cell-14 {
+    background-color: gainsboro;
+
+}
+
+.cell-15 {
+    background-color: floralwhite;
+    align-self: start;
+    justify-self: start;
+}
+
+.cell-16 {
+    background-color: floralwhite;
+    align-self: stretch;
+    justify-self: end;
+}
+
+
+.cell-17 {
+    background-color: floralwhite;
+    align-self: start;
+}
+
+
+.cell-18 {
+    background-color: floralwhite;
+    align-self: stretch;
+    justify-self: start;
+}
