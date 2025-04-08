@@ -1,0 +1,1009 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(50, 62, 42);
+    background: linear-gradient(90deg, rgba(50, 62, 42, 1) 0%, rgba(16, 24, 21, 1) 100%);
+    font-family: monospace;
+}
+
+/* ________________________NAVBAR START_____________________ */
+#navbar {
+    max-width: 100%;
+    /* background-color: aqua; */
+    height: 68px;
+    margin: 50px;
+
+
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+
+
+}
+
+.logo {
+    display: inline-block;
+    margin: 0.5rem;
+    grid-area: logo;
+
+
+}
+
+#logotekst {
+    display: inline-block;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 50%;
+
+
+
+}
+
+a {
+    color: rgb(252, 67, 0);
+    font-family: monospace;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all .5x ease;
+
+}
+
+a:hover {
+    color: white;
+}
+
+li {
+    display: inline-block;
+    color: rgb(252, 67, 0);
+
+
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* ___________________________NAVBAR END_______________________ */
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    width: 99vw;
+    gap: 1rem;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-template-areas:
+        " . articletop articletop articletop articletop . forside forside forside forside forside . "
+        ". . . . . . . . . . . ."
+        "ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider"
+        ". . . . . . . . . . . ."
+        ". section2 section2 section2 section2 . img2 img2 img2 img2 img2 ."
+        ". img3 img3 img3 img3 img3 . section3 section3 section3 section3 ."
+        ". section4 section4 section4 section4 . img4 img4 img4 img4 img4 ."
+        ". . . . . . . . . . . ."
+        ". . section5 section5 section5 section5 section5 section5 section5 section5 . ."
+        ". . . . . . . . . . . . "
+        "endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer "
+    ;
+}
+
+/* AISHA - ISABELLA - FATIMA START */
+
+#ourworkdivider {
+    grid-area: ourworkdivider;
+    background-color: rgb(14, 21, 19);
+    width: 100%;
+
+}
+
+/* AISHA - ISABELLA - FATIMA END*/
+
+
+
+
+
+/* _____________ENDCONTAINER START ___________ */
+
+#endcontainer {
+    grid-area: endcontainer;
+    background-color: rgb(14, 21, 19);
+    width: 100%;
+}
+
+/* _____________ENDCONTAINER END ___________ */
+
+
+.articletop {
+    grid-area: articletop;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.articlemid {
+    grid-area: articlemid;
+    padding: 50px;
+    background-color: rgb(14, 21, 19);
+
+}
+
+
+/* _____________________SECTIONS START___________________ */
+
+.section1 {
+    grid-area: section1;
+    display: grid;
+    background-color: rgb(14, 21, 19);
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    width: 70%;
+    gap: 0.5rem;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    justify-items: stretch;
+    grid-template-areas:
+        "ourwork ourwork ourwork . . ."
+        ". . . . . ."
+        "aisha aisha isabella isabella fatima fatima"
+        "aishaår aishaår isabellaår isabellaår fatimaår fatimaår"
+        "aishatekst aishatekst isabellatekst isabellatekst fatimatekst fatimatekst"
+        ". . . . . button";
+}
+
+
+.section2 {
+    grid-area: section2;
+    align-self: center;
+    justify-self: end;
+
+}
+
+.section3 {
+    grid-area: section3;
+    align-self: center;
+    justify-self: start;
+}
+
+.section4 {
+    grid-area: section4;
+    align-self: center;
+    justify-self: end;
+}
+
+.section5 {
+    grid-area: section5;
+    text-align: center;
+}
+
+
+/* _______________________SECTIONS END____________________ */
+
+
+/*__________________________ SECTION1 START_______________ */
+
+.ourwork {
+    grid-area: ourwork;
+    justify-self: start;
+}
+
+.aisha2018 {
+    grid-area: aishaår;
+    font-size: 14px;
+
+}
+
+.isabella2021 {
+    grid-area: isabellaår;
+    font-size: 14px;
+}
+
+.fatima2022 {
+    grid-area: fatimaår;
+    font-size: 14px;
+}
+
+.aishatekst {
+    grid-area: aishatekst;
+    font-size: 18px;
+}
+
+.isabellatekst {
+    grid-area: isabellatekst;
+    font-size: 18px;
+}
+
+.fatimatekst {
+    grid-area: fatimatekst;
+    font-size: 18px;
+}
+
+
+/*__________________________ SECTION1 END_______________ */
+
+/*__________________________ SECTION6 start_______________ */
+
+.section6 {
+    grid-area: section6;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    width: 100%;
+    gap: 0.5;
+    grid-template-areas:
+        "hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer"
+        "copyright copyright copyright . . . . . mediacontainer mediacontainer mediacontainer mediacontainer"
+}
+
+#hrcontainer {
+    grid-area: hrcontainer;
+}
+
+hr {
+    height: 1px;
+    border-width: 0;
+    background-color: rgb(252, 67, 0);
+
+}
+
+
+#mediacontainer {
+    grid-area: mediacontainer;
+    text-align: end;
+    display: inline;
+}
+
+
+/*__________________________ SECTION6 END_______________ */
+
+
+
+
+
+
+
+/* ___________________________article2____________________ */
+
+.capturetekst {
+    color: rgb(252, 67, 0);
+    justify-self: center;
+    align-self: center;
+    font-size: 80px;
+
+}
+
+.smallertekst {
+    color: rgb(252, 67, 0);
+    justify-self: center;
+    align-self: center;
+    font-size: 16px;
+}
+
+/* ___________________________article2____________________ */
+
+
+
+
+/* TEKST STYLING */
+
+.minioverskift {
+    font-size: 14px;
+    color: rgb(252, 67, 0);
+}
+
+.victorianoverskift {
+    font-size: 14px;
+    color: rgb(252, 67, 0);
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+}
+
+.victorian {
+    justify-self: center;
+    align-self: center;
+    padding: 50px;
+}
+
+
+h1 {
+    font-size: 20px;
+    color: rgb(252, 67, 0);
+}
+
+h2 {
+    font-size: 80px;
+    color: rgb(252, 67, 0);
+    padding: 10px;
+    grid-area: h2;
+
+}
+
+h3 {
+    font-size: 60px;
+    grid-area: h3;
+    color: rgb(252, 67, 0);
+}
+
+h4 {
+    color: rgb(252, 67, 0);
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-size: 48px;
+    color: rgb(252, 67, 0);
+
+
+}
+
+h6 {
+    font-size: 80px;
+    color: rgb(252, 67, 0);
+    justify-self: center;
+    align-self: center;
+}
+
+p {
+    font-size: 16px;
+    color: rgb(252, 67, 0);
+    ;
+}
+
+
+
+
+
+/* ________________BUTTON START_____________ */
+
+/* _____________________play button1_______________ */
+.button1 {
+    background: rgba(50, 62, 42, 1);
+    border: none;
+    align-self: center;
+    margin: 10px;
+    padding: 10px;
+    display: block;
+
+}
+
+/* ______________________View all work Button2_________________ */
+.button2 {
+    color: rgb(252, 67, 0);
+    background-color: rgb(14, 21, 19);
+    grid-area: button;
+    border: solid rgb(252, 67, 0) 1px;
+    margin: 50px;
+    padding: 10px;
+
+
+}
+
+/* _____________________View case study button3______________ */
+.button3 {
+    color: rgb(252, 67, 0);
+    background-color: transparent;
+    grid-area: button2;
+    border: solid rgb(252, 67, 0) 1px;
+    margin: 20px;
+    height: 40px;
+    width: 150px;
+
+}
+
+/* ______________kun nedeste View case study button4 ______________ */
+.button4 {
+    color: rgb(252, 67, 0);
+    background-color: transparent;
+    grid-area: button2;
+    border: solid rgb(252, 67, 0) 1px;
+    margin: 0 auto;
+    height: 40px;
+    width: 150px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+
+/* ________________BUTTON END_____________ */
+
+
+/* _____________FOOTER LOGO START__________ */
+.facebook {
+    height: 20px;
+    width: 20px;
+    grid-area: facebook;
+    display: inline-block;
+    margin: 5px;
+
+
+}
+
+.imgfacebook {
+    height: 20px;
+    width: 20px;
+}
+
+.instagram {
+    height: 20px;
+    width: 20px;
+    grid-area: instagram;
+    display: inline-block;
+    margin: 5px;
+
+}
+
+.imginstagram {
+    height: 20;
+    width: 20;
+}
+
+.linkedin {
+    height: 20px;
+    width: 20px;
+    grid-area: linkedin;
+    display: inline-block;
+    margin: 5px;
+
+}
+
+.imglinkedin {
+    height: 20px;
+    width: 20px;
+}
+
+.twitter {
+    height: 20px;
+    width: 20px;
+    grid-area: twitter;
+    display: inline-block;
+    margin: 5px;
+
+}
+
+.imgtwitter {
+    height: 20px;
+    width: 20px;
+}
+
+/* _____________FOOTER LOGO END__________ */
+
+/* _____________FOOTER TEKST START____________ */
+
+
+
+.projects {
+    font-size: 14px;
+    grid-area: projects;
+    align-self: start;
+}
+
+.portraits {
+    font-size: 14px;
+    grid-area: portraits;
+    align-self: start;
+}
+
+.fashion {
+    font-size: 14px;
+    grid-area: fashion;
+    align-self: start;
+}
+
+.fineart {
+    font-size: 14px;
+    grid-area: fineart;
+    align-self: start;
+
+}
+
+.copyright {
+    font-size: 14px;
+    grid-area: copyright;
+    align-self: start;
+}
+
+/* FOOTER TEKST END*/
+
+
+/* _________________________FOOTER MAIN START__________________ */
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(14, 21, 19);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    width: 100%;
+    height: 212px;
+    grid-template-areas:
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        "logo logo logo . . . . . projects portraits fashion fineart"
+        ". . . . . . . . . . . ."
+        "section6 section6 section6 section6 section6 section6 section6 section6 section6 section6 section6 section6"
+
+}
+
+
+
+/* _________________BILLEDER START_________________ */
+
+.forside {
+    grid-area: forside;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    display: img5;
+}
+
+.aisha {
+    grid-area: aisha;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+
+
+}
+
+.isabella {
+    grid-area: isabella;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.fatima {
+    grid-area: fatima;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.gabriela {
+    width: 560px;
+    height: 640px;
+}
+
+.amara {
+    width: 560px;
+    height: 640px;
+}
+
+.priaya {
+    width: 560px;
+    height: 640px;
+}
+
+.victorianimg {
+    width: 1070px;
+    height: 625px;
+}
+
+/* _________________BILLEDER SLUT_________________ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\  TABLET START /////////////////// */
+
+@media screen and (max-width: 768px) {
+
+
+    html {
+        width: 100%;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        width: 100vw;
+        gap: 1rem;
+        align-items: stretch;
+        justify-items: stretch;
+        grid-template-areas:
+            " . articletop articletop articletop articletop . forside forside forside forside forside . "
+            ". . . . . . . . . . . ."
+            "ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider ourworkdivider"
+            ". . . . . . . . . . . ."
+            ". section2 section2 section2 section2 . img2 img2 img2 img2 img2 ."
+            ". img3 img3 img3 img3 img3 . section3 section3 section3 section3 ."
+            ". section4 section4 section4 section4 . img4 img4 img4 img4 img4 ."
+            ". . . . . . . . . . . ."
+            ". . section5 section5 section5 section5 section5 section5 section5 section5 . ."
+            ". . . . . . . . . . . . "
+            "endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer endcontainer ";
+    }
+
+    .section1 {
+        grid-area: section1;
+        display: grid;
+        background-color: rgb(14, 21, 19);
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        width: 70%;
+        gap: 0.5rem;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+        justify-items: stretch;
+        grid-template-areas:
+            "ourwork ourwork ourwork . . ."
+            ". . . . . ."
+            "aisha aisha isabella isabella fatima fatima"
+            "aishaår aishaår isabellaår isabellaår fatimaår fatimaår"
+            "aishatekst aishatekst isabellatekst isabellatekst fatimatekst fatimatekst"
+            ". . . . button button";
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: rgb(14, 21, 19);
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        width: 100%;
+        height: 212px;
+        grid-template-areas:
+            ". . . . . . . ."
+            ". . . . . . . ."
+            "logo logo . . projects portraits fashion fineart"
+            ". . . . . . . ."
+            "section6 section6 section6 section6 section6 section6 section6 section6"
+    }
+
+    .section6 {
+        grid-area: section6;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        width: 100%;
+        gap: 0.5;
+        grid-template-areas:
+            "hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer "
+            "copyright copyright copyright . mediacontainer mediacontainer mediacontainer mediacontainer"
+    }
+
+
+
+
+    h2 {
+        font-size: 5rem;
+    }
+
+
+    /* ___________BILLEDER START___________ */
+
+    .forside {
+        grid-area: forside;
+        width: 100%;
+        height: auto;
+    }
+
+    .forsidemob {
+        grid-area: forsidemob;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .aishamob {
+        grid-area: aishamob;
+        width: 100%;
+        height: auto;
+    }
+
+    .isabellamob {
+        grid-area: isabellamob;
+        width: 100%;
+        height: auto;
+    }
+
+    .fatimamob {
+        grid-area: fatimamob;
+        width: 100%;
+        height: auto;
+    }
+
+    .gabriela {
+        width: 100%;
+        height: auto;
+    }
+
+    .amara {
+        width: 100%;
+        height: auto;
+    }
+
+    .priaya {
+        width: 100%;
+        height: auto;
+    }
+
+    .victorianimg {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ___________BILLEDER END___________ */
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\  TABLET END /////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\  MOBIL START /////////////////// */
+
+
+
+@media screen and (max-width: 468px) {
+
+
+    html {
+        width: 100%;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        width: 100vw;
+        gap: 1rem;
+        align-items: stretch;
+        justify-items: stretch;
+        grid-template-areas:
+            "forside forside forside forside"
+            " articletop articletop articletop articletop"
+            ". . . ."
+            "ourworkdivider ourworkdivider ourworkdivider ourworkdivider"
+            ". . . ."
+            "img2 img2 img2 img2"
+            "section2 section2 section2 section2"
+            "img3 img3 img3 img3"
+            "section3 section3 section3 section3"
+            "img4 img4 img4 img4"
+            "section4 section4 section4 section4"
+            ". . . ."
+            "section5 section5 section5 section5"
+            ". . . . "
+            "endcontainer endcontainer endcontainer endcontainer";
+    }
+
+
+    .section1 {
+        grid-area: section1;
+        display: grid;
+        background-color: rgb(14, 21, 19);
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        width: 70%;
+        gap: 0.5rem;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+        justify-items: stretch;
+        grid-template-areas:
+            "ourwork ourwork ourwork ourwork ourwork ourwork"
+            ". . . . . ."
+            "aisha aisha isabella isabella fatima fatima"
+            "aishaår aishaår isabellaår isabellaår fatimaår fatimaår"
+            "aishatekst aishatekst isabellatekst isabellatekst fatimatekst fatimatekst"
+            "button button button button button button";
+    }
+
+
+
+
+    .footer {
+        grid-area: footer;
+        background-color: rgb(14, 21, 19);
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        width: 100%;
+        height: 212px;
+        grid-template-areas:
+            ". . . . . ."
+            ". . . . . ."
+            "logo . projects portraits fashion fineart"
+            ". . . . . ."
+            "section6 section6 section6 section6 section6 section6";
+    }
+
+    .capturetekst {
+        font-size: 5rem;
+    }
+
+    .smallertekst {
+        font-size: 1rem;
+    }
+
+
+    .section6 {
+        grid-area: section6;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        width: 100%;
+        gap: 0.5;
+        grid-template-areas:
+            "hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer hrcontainer"
+            "copyright copyright copyright copyright mediacontainer mediacontainer"
+
+    }
+
+
+    .projects {
+        font-size: 10px;
+        grid-area: projects;
+        align-self: start;
+    }
+
+    .portraits {
+        font-size: 10px;
+        grid-area: portraits;
+        align-self: start;
+    }
+
+    .fashion {
+        font-size: 10px;
+        grid-area: fashion;
+        align-self: start;
+    }
+
+    .fineart {
+        font-size: 10px;
+        grid-area: fineart;
+        align-self: start;
+
+    }
+
+    .copyright {
+        font-size: 10px;
+        grid-area: copyright;
+        align-self: start;
+    }
+
+
+    #logotekst {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+
+
+    li {
+        display: inline-block;
+        color: rgb(252, 67, 0);
+        font-size: 0.8rem;
+
+
+    }
+
+
+
+    /* BILLEDER */
+
+    .forside {
+        grid-area: forside;
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .forsidemob {
+        grid-area: forsidemob;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .aishamob {
+        grid-area: aishamob;
+        width: 100%;
+        height: auto;
+    }
+
+    .isabellamob {
+        grid-area: isabellamob;
+        width: 100%;
+        height: auto;
+    }
+
+    .fatimamob {
+        grid-area: fatimamob;
+        width: 100%;
+        height: auto;
+    }
+
+    .gabriela {
+        width: 90%;
+        height: auto;
+        margin-left: 25px;
+
+    }
+
+    .amara {
+        width: 90%;
+        height: auto;
+        margin-left: 25px;
+    }
+
+    .priaya {
+        width: 90%;
+        height: auto;
+        margin-left: 25px;
+    }
+
+    .victorianimg {
+        width: 100%;
+        height: auto;
+    }
+
+}
