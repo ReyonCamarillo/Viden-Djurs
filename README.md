@@ -1,2 +1,2 @@
 # Viden-Djurs
-Personal pet projects.
+Personal pet projects during school time
