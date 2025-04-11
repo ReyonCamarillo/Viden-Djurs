@@ -1,0 +1,84 @@
+@font-face {
+    font-family: montereyflf;
+    src: url(MontereyFLF.ttf);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(69, 85, 206);
+    color: #f5f6f7;
+    font-family: montereyflf;
+    font-size: 16px;
+    background-image: url(img/Clothing\ Line.webp);
+    background-size: cover;
+
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.border {
+    border-radius: 5px;
+}
+
+h1,
+p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.tillykke {
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+
+form {
+    width: 60vw;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 70%;
+    min-width: 300px;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.5rem;
+    background-color: #3b3b4f;
+    color: white;
+}
+
+.identitet {
+    background: linear-gradient(100deg, #825438, #a37a68, #EDC0AC);
+
+}
+
+.tøjstil {
+    background: linear-gradient(200deg, #B18674, #a37a68, #EDC0AC);
+}
+
+#submit {
+    border-radius: 20px;
+}
+
+.svanelogo {
+    width: 100px;
+    height: auto;
+    display: inline;
+    position: absolute;
+    margin-left: 350px;
+}
+
+.survey {
+    background: linear-gradient(#31322b, #A37A68);
+}

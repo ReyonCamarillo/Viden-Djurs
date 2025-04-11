@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tilmelding af nyhedsbrev</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+
+    <h1 id="title">Tillykke, du har vundet rabat!</h1>
+    <p id="description">Få de gode mode nyheder og mærkevarer drops, tilmeld dig vores nyhedsmail</p>
+    <form method="post" action="#" id="survey-form" name="survey-form">
+
+
+
+        <!-- TOP FORMULAR -->
+        <div class="form1">
+            <fieldset class="identitet border">
+
+
+                <!-- LOGO IMG -->
+                <figure>
+                    <img class="svanelogo" src="img/Svane-Logo-V2.png" alt="Vector af en svane">
+                </figure>
+
+
+                <!-- NAVNE TIL SIGNUP -->
+                <label for="fornavn" id="fornavne-label">Fornavn
+                    <br>
+                    <input id="fornavn" name="fornavn" type="text" placeholder="Indtast dit fornavn" required />
+                </label>
+                <label for="efternavn" id="efternavne-label">Efternavn
+
+
+                    <!-- Efternavn -->
+                    <br>
+                    <input id="efternavn" name="efternavn" type="text" placeholder="Indtast dit efternavn" required />
+                </label>
+
+                <!-- Email -->
+                <label for="email" id="email-label">Email
+                    <br>
+                    <input id="email" name="email" type="email" placeholder="Indtast din email" required />
+                </label>
+
+                <!-- telefon nummer -->
+                <label for="tlfnummer" id="tlfnummer-label">Telefon nummer
+                    <br>
+                    <input id="tlfnummer" name="tlfnummer" type="number" placeholder="Telefon nummer"
+                        value="number-label" required /> </label>
+
+
+                <!-- dropdown menu -->
+                <label for="dropdown" name="dropdown">Hvad foretrækker du mest?
+                    <select id="dropdown">
+                        <option value=""> Tøj typer</option>
+                        <option value="1"> t-shirts </option>
+                        <option value="2"> Sweatshirts/hoodie </option>
+                        <option value="3"> Shorts </option>
+                        <option value="4"> Bukser </option>
+                        <option value="5"> Det hele! </option>
+                    </select>
+                </label>
+            </fieldset>
+
+
+            <!-- FIELDSET 2 TØJSTIL -->
+            <fieldset class="tøjstil border">
+                <legend> Hvilket køn er du?</legend>
+                <label for="mand"><input type="radio" name="account-type" id="mand" checked value="mand"> Mand</label>
+                <label for="kvinde"><input type="radio" name="account-type" id="kvinde" value="kvinde"> Kvinde</label>
+                <label for="ukendt"><input type="radio" name="account-type" id="ukendt" value="ukendt"> Anonym</label>
+            </fieldset>
+
+
+            <!-- FIELDSET 3  SURVEY -->
+            <fieldset class="survey border">
+                <label>
+                    <legend> Er vi en god tøjbutik?
+                        <label for="ja"><input type="checkbox" name="account-type" id="ja" checked value="ja">
+                            Ja!</label>
+                        <label for="jatøvende"><input type="checkbox" name="account-type" id="jatøvende"
+                                value="jatøvende">
+                            Ja.....</label>
+                        <label for="Ja-suk"><input type="checkbox" name="account-type" id="Ja-suk" value="Ja-suk"> Ja
+                            *suk*</label>
+                </label>
+            </fieldset>
+
+            <!-- TEXT AREA OMRÅDE -->
+
+            <label for="bio">Er der noget du gerne vil anbefale?
+                <br>
+                <textarea placeholder="bedste tøjbutik ever <3" rows="3" cols="30"></textarea></label>
+
+            <input type="submit" value="Send" id="submit">
+    </form>
+    </div>
+</body>
+
+</html>
