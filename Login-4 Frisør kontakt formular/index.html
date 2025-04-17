@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tilmelding af nyhedsbrev</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+    <main>
+        <div class="container">
+
+
+
+            <!-- TOP FORMULAR -->
+            <div class="form1">
+                <br>
+                <h1 id="title">Bestil tid hos <span> Salon Svane</span></h1>
+                <p id="description">Her kan du kontakte os og bestille tid</p>
+                <form method="post" action="https://github.com/ReyonCamarillo/">
+
+                    <fieldset class="identitet">
+
+                        <!-- LOGO IMG -->
+                        <figure>
+                            <img class="logo" src="img/003V2-Svane.png" alt="Vector af en svane">
+                        </figure>
+                        <!-- BILLEDE LOGO -->
+                        <section class="åbningstiderboks">
+                            <p class="åbningstider">
+                            <h3>Åbningstider</h3>
+                            Tirsdag 08.00 - 17.30 <p></p>
+                            Onsdag 08.00 - 17.30 <p></p>
+                            Torsdag 08.00 - 17.30 <p></p>
+                            Fredag 08.00 - 18.00 <p></p>
+                            Lørdag 07.00 - 13.00 <p></p>
+                            Søndag og mandag Lukket
+                            </p>
+                        </section>
+
+
+                        <!-- NAVNE TIL SIGNUP -->
+                        <label for="fornavn" id="fornavne-label" onclick="">Fornavn
+                            <br>
+                            <input id="fornavn" name="fornavn" type="text" placeholder="Indtast dit fornavn" required />
+                        </label>
+                        <label for="efternavn" id="efternavne-label">Efternavn
+
+
+                            <!-- Efternavn -->
+                            <br>
+                            <input id="efternavn" name="efternavn" type="text" placeholder="Indtast dit efternavn"
+                                required />
+                        </label>
+
+
+                        <!-- telefon nummer -->
+                        <label for="tlfnummer" id="tlfnummer-label">Telefon nummer
+                            <br>
+                            <input id="tlfnummer" name="tlfnummer" type="number" placeholder="Telefon nummer"
+                                value="number-label" required /> </label>
+
+                        <!-- DATO TIDSBESTILLING -->
+
+                        <label for="tidsbestilling">Tidsbestilling</label>
+                        <!-- <input type="date" id="tidsbestilling" name="tidsbestilling">
+
+                        <input type="time" id="klokkeslæt" name="klokkeslæt"> -->
+
+                        <input type="datetime-local" required>
+
+
+
+                        <!-- Herre eller kvinde klip -->
+                        <section class="typekøn">
+                            <p>Type af hårklipning</p>
+                            <input type="radio" id="herreklip" name="options" value="herreklip">Herreklip
+                            <br>
+
+                            <input type="radio" id="dameklip" name="options" value="dameklip">Dameklip
+
+                        </section>
+
+
+
+                        <!-- dropdown menu -->
+                        <label for="dropdown" name="dropdown">Hvilken bestilling vil du foretage dig?
+                            <br>
+                            <select id="dropdown">
+                                <option value=""> Vælg</option>
+                                <option value="1"> Hårvask </option>
+                                <option value="2"> Hårvask med klipning </option>
+                                <option value="3"> Permanent </option>
+                                <option value="4"> Hårfarvning med permanent og klipning </option>
+                                <option value="5"> Andet </option>
+                            </select>
+                        </label>
+
+
+
+
+
+                        <!-- TEXT AREA OMRÅDE -->
+                        <label for="bio">Spørgsmål
+                            <br>
+                            <textarea placeholder="Kan man få hovedmassage med hårvasken?" rows="3"
+                                cols="30"></textarea></label>
+
+
+
+                        <input type="submit" required value="Send" id="submit">
+
+
+
+
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

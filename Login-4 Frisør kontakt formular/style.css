@@ -1,0 +1,99 @@
+@font-face {
+    font-family: montereyflf;
+    src: url(MontereyFLF-BoldItalic.ttf);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: whitesmoke;
+    color: #f5f6f7;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-image: url(img/haircut\ men.jpg);
+    background-size: cover;
+
+}
+
+.container {
+    background: linear-gradient(70deg, #CDA088, #D1835F, #CFBFB5 80%, #383D50);
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 650px;
+    border-radius: 20px;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+h1,
+#description {
+    margin: 1em auto;
+    text-align: center;
+}
+
+span {
+    font-family: montereyflf;
+    border: solid 3px white;
+    padding: 10px;
+
+}
+
+form {
+    width: 60vw;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 70%;
+    min-width: 300px;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.5rem;
+    background-color: #3b3b4f;
+    color: white;
+}
+
+.identitet {
+    background: linear-gradient(220deg, #CDA088, #D1835F, #CFBFB5 80%, #383D50);
+    border-radius: 20px;
+}
+
+#submit {
+    border-radius: 10px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    display: inline;
+    position: absolute;
+    margin-left: 380px;
+}
+
+.åbningstiderboks {
+    display: inline;
+    float: right;
+    margin-top: 120px;
+    border: solid 1px white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.åbningstider {
+    text-align: left;
+}
+
+.typekøn {
+    text-align: left;
+    justify-content: start;
+    align-items: start;
+}
